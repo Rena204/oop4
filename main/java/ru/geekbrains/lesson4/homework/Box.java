@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-/**
- * @author Dmitry Tkachenko
- * @version 1.0 5/7/17
- */
+
 public class Box<T extends Fruit> {
 
     private ArrayList<T> list;
@@ -46,7 +43,7 @@ public class Box<T extends Fruit> {
 
     public boolean compare(Box<?> o) {
 
-        // избегаем ошибки округления с помощью дельты
+       
         return Math.abs(this.getWeight() - o.getWeight()) < 0.001;
     }
 }
